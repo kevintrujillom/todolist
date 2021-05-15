@@ -1,0 +1,31 @@
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+
+          <div class="col-xl-8 col-lg-8 col-10">
+              <form [formGroup]="formCreate" (ngSubmit)="create()">
+                <div class="row row-custom">
+                    <div class="col-custom col-xl-6 col-lg-6 col-12">
+                        <div class="title"><span>+</span> Nueva tarea</div>
+                        <div class="input">
+                            <label for="task">Titulo</label>
+                            <input type="text" name="task" id="task" formControlName="title" placeholder="Ingrese titulo...">
+                        </div>
+                    </div>
+                    <div class="col-custom col-xl-3 col-lg-3 col-12 complete">
+                        <label for="complete">Tarea completada</label>
+                        <input type="checkbox" name="complete" id="complete" formControlName="state">
+                    </div>
+                    <div class="col-custom col-btn col-xl-3 col-lg-3 col-12">
+                        <button class="btn-save"><span>+</span>Guardar tarea</button>
+                    </div>                                
+                </div>
+            </form>
+          </div>
+          
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+        </div>
+    </div>
+</div>
